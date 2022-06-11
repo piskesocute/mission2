@@ -1,0 +1,411 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  font-family: "Noto Sans TC", sans-serif !important;
+}
+
+header {
+  height: 100vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.container {
+  width: calc(100% - 280px);
+  height: auto;
+  padding: 0 140px;
+}
+
+nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 24px 0;
+  margin-bottom: 188px;
+}
+
+.banner h1 {
+  font-size: 18px;
+  color: #56C4C5;
+  margin-bottom: 8px;
+}
+
+.banner p {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 64px;
+  margin-bottom: 16px;
+}
+
+.banner h2 {
+  font-size: 20px;
+}
+
+.a-logo {
+  display: block;
+}
+
+.a-logo img {
+  display: block;
+  width: 218px;
+  height: 40px;
+}
+
+.item-btn {
+  display: block;
+  width: 128px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #FF5D50;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 40px;
+  font-weight: regular;
+}
+
+.header-bg-img {
+  width: 532px;
+  height: 534px;
+  background-image: url("../img/home.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 118px;
+  right: 140px;
+  z-index: -1;
+}
+
+.header-bg-img2 {
+  width: 850px;
+  height: 100vh;
+  background-image: url("../img/bg_home.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.header-bg-ball {
+  background-image: url("../img/ball01.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  bottom: -180px;
+  left: 0;
+  width: 138px;
+  height: 360px;
+  position: absolute;
+  z-index: -1px;
+}
+
+.st-social {
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+
+.st-social .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.st-social .st_slogan {
+  width: 100%;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 48px;
+  color: #221E1F;
+  line-height: 48px;
+}
+
+.st-social h3 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #221E1F;
+  line-height: 36px;
+}
+
+.social {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-box img {
+  margin: 0 auto 24px;
+  display: block;
+  width: 90px;
+  height: auto;
+}
+
+.social-box p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 24px;
+  color: #747474;
+  font-weight: Regular;
+}
+
+.st-target {
+  position: relative;
+}
+
+.st-target .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.st-target .st_slogan {
+  width: 100%;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 16px;
+  color: #221E1F;
+  line-height: 48px;
+}
+
+.st-target h3 {
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  font-weight: Regular;
+  margin-bottom: 48px;
+  color: #221E1F;
+  line-height: 30px;
+}
+
+.st-target .target-bg-ball {
+  width: 210px;
+  height: 310px;
+  background-image: url("../img/ball02.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -100px;
+  right: 0px;
+  z-index: -1;
+}
+
+.ta-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.ta-box .ta-card {
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  background-color: #FFFFFF;
+}
+
+.ta-box img {
+  border-radius: 12px 12px 0 0;
+  width: 260px;
+  height: auto;
+  display: block;
+}
+
+.ta-box .ta-word {
+  text-align: center;
+  padding: 0 16px 24px;
+}
+
+.ta-box p {
+  height: 24px;
+  color: #221E1F;
+  line-height: 24px;
+}
+
+.ta-box .ta-box-title {
+  line-height: 24px;
+  color: #56C4C5;
+  margin: 16px auto;
+}
+/*# sourceMappingURL=all.css.map */
